@@ -11,7 +11,7 @@ The steps included in this readme will allow you to add Inovelli devices to home
 
 2.  Copy the files into your config folder.  I placed the [linked config folder and files](https://github.com/home-assistant/open-zwave/tree/hass/config) into a folder named ozwave residing in the root directdory of your home assistant configuration.  This guide will assume you do the same.  The resulting path will be `/config/ozwave/config/<company name folders & files>`.
  
-3.  Copy [these files](https://github.com/Petro31/inovelli_zwave_config/tree/master/config/inovelli) into the `/config/ozwave/config/inovelli` directory.
+3.  Copy [these files](https://github.com/InovelliUSA/OpenZWave/tree/master/config/inovelli) into the `/config/ozwave/config/inovelli` directory.
 
 # 2. Edit `manufacturer_specific.xml`.
 
@@ -33,10 +33,14 @@ The steps included in this readme will allow you to add Inovelli devices to home
 
 	<Manufacturer id="031E" name="Inovelli">
 		<Product type="0002" id="0001" name="LZW30-SN Switch Red Series" config="inovelli/lzw30-sn.xml"/>
-		<Product type="0001" id="0001" name="LZW31-SN Dimmer Red Series" config="inovelli/lzw31-sn.xml"/>
-		<Product type="0005" id="0001" name="LZW42 Multi-Color Bulb" config="inovelli/lzw42.xml"/>
-		<Product type="0006" id="0001" name="LZW41 Multi-White Bulb" config="inovelli/lzw41.xml"/>
-		<Product type="0007" id="0001" name="LZW40 Dimmable  Bulb" config="inovelli/lzw40.xml"/>
+    <Product type="0004" id="0001" name="LZW30 Switch" config="inovelli/lzw30.xml"/>
+    <Product type="0001" id="0001" name="LZW31-SN Dimmer Red Series" config="inovelli/lzw31-sn.xml"/>
+    <Product type="0003" id="0001" name="LZW31 Dimmer" config="inovelli/lzw31.xml"/>
+    <Product type="0005" id="0001" name="LZW42 Multi-Color Bulb" config="inovelli/lzw42.xml"/>
+    <Product type="0006" id="0001" name="LZW41 Multi-White Bulb" config="inovelli/lzw41.xml"/>
+    <Product type="0007" id="0001" name="LZW40 Dimmable  Bulb" config="inovelli/lzw40.xml"/>
+    <Product type="000d" id="0001" name="LZW60 4-in-1 Sensor" config="inovelli/lzw60.xml"/>
+    <Product type="000e" id="0001" name="LZW36 Fan/Light Dimmer" config="inovelli/lzw36.xml"/>
 	</Manufacturer>
 ```
    
